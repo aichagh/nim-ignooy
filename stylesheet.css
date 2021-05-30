@@ -1,0 +1,83 @@
+html {
+  background-image: linear-gradient(to bottom, #e9e0ff, #FFF);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  font-family: "always together", sans-serif;
+  font-size: 18px;
+}
+
+.clear_fix:before,
+.clear_fix:after {
+  content:"";
+  display: table;
+}
+
+.clear_fix:after {
+  clear:both;
+}
+
+.clear_fix {
+  zoom: 1;
+}
+
+.nav_menu {
+  background-image: linear-gradient(to right, #FFFFFF, rgba(0, 0, 0, 0));
+  background-repeat: no-repeat;
+  height: 50px;
+  width: auto;
+}
+
+.nav_menu ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nav_menu li {
+  list-style: none;
+  float: left;
+  margin: 5px;
+}
+
+.nav_menu a {
+  text-decoration: none;
+  background-color: #968fff;
+  color: white;
+  padding: 10px 25px;
+  display: block;
+}
+
+.nav_menu a:hover {
+  background-color: white;
+  color: #968fff;
+  transition: 0.3s ease-in;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 24px;
+}
+
+.welcome img {
+  width: 25%;
+  height: auto;
+  left: auto;
+  right: auto
+}
+
+.welcome img:hover {
+  opacity: 1;
+  animation: 5s goodabi;
+  animation-fill-mode: forwards;
+}
+
+.Yoongi_div {
+  text-align: center;
+}
+
+@keyframes goodabi{
+  from {opacity: 1;}
+  to {opacity: 0;}
+}

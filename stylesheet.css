@@ -9,20 +9,6 @@ body {
   font-size: 18px;
 }
 
-.clear_fix:before,
-.clear_fix:after {
-  content:"";
-  display: table;
-}
-
-.clear_fix:after {
-  clear:both;
-}
-
-.clear_fix {
-  zoom: 1;
-}
-
 .nav_menu {
   background-image: linear-gradient(to right, #FFFFFF, rgba(0, 0, 0, 0));
   background-repeat: no-repeat;
@@ -56,15 +42,26 @@ body {
 }
 
 .welcome {
+  max-width: 940px;
   text-align: center;
   font-size: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .welcome img {
-  width: 25%;
+  width: 40%;
   height: auto;
-  left: auto;
-  right: auto
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 700px) {
+
+  .welcome img {
+    width: 100%;
+  }
+
 }
 
 .welcome img:hover {
